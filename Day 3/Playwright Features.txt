@@ -1,0 +1,22 @@
+Playwright Adv
+
+Playwright 
+
+Multiple language support: Java,C#, Python, supports type scripts and java scripts (No apis are not needed)Java,C#, Python
+supports type scripts and java scripts (No apis are not needed)
+Testing types - functional and E2E, API testing
+accessibility ,Unit testing
+Browsers: chrome, firefox, edge,safari
+Installation : setup and configuration
+Browser Context(Inbuilt support) is used for parallel testing
+Supports multiple tabs and multiple windows easily
+By default has lots off reporters (json, html,)external apis can also be used 
+Parallel testing is done thr running several worker processes
+
+
+
+cons
+Invented in 2020, new and evolving
+No support for IE
+No support for native mobile apps
+

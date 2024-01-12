@@ -1,0 +1,122 @@
+<html>
+<head>
+	<title>JS Array</title>
+	
+</head>
+<body>
+	<center>
+		<h1>Welcome to Playwright Training!!</h1>
+	</center>
+		
+	<script>
+		const cars=["Hyundai","Kia","Honda","Maruti","Toyota"];
+		document.write(cars+"<br>");
+		
+		const mobile=[];
+		mobile[0] = "Samsung";
+		mobile[1] = "OnePlus";
+		mobile[2]="IPhone";
+		document.write(mobile+"<br>");
+		
+		const laptop = new Array("Dell","Lenovo","HP");
+		document.write(laptop+"<br>");
+		
+		document.write(laptop[2]+"<br>");
+		
+		for(let i=0;i<laptop.length;i++){
+			document.write(laptop[i]+"<br>");
+		}
+		
+		laptop[1]="Acer";
+		for(let i=0;i<laptop.length;i++){
+			document.write(laptop[i]+"<br>");
+		}
+		
+	//	const person=["Sai","Gautam",28];
+		
+		const person = {firstName:"Sai",lastName:"Gautam",age:28};
+		document.write(person.lastName+"<br>");
+		document.write(person.age+"<br>");
+		
+		const array1 = [];
+		array1[0] = mobile;
+		array1[1] = cars;
+		
+		document.write(array1+"<br>");
+		
+		document.write("Array Length:  "+cars.length+"<br>");
+		document.write("Last Element:  "+laptop[laptop.length-1]+"<br>");
+		
+		laptop.push("Mac");
+		document.write("Array after adding Element:  "+laptop+"<br>");
+		
+		laptop[laptop.length] = "Asus";			//adding after last elem
+		document.write("Array after adding Element:  "+laptop+"<br>");
+		
+		laptop[5] = "Vivo";			//laptop[8]="Vivo";
+		document.write("Array after adding Element:  "+laptop+"<br>");
+		
+		document.write(person[1]+"<br>");  //gives undefined
+		document.write("Array Length:  "+person.length+"<br>");
+		
+		document.write(Array.isArray(person)+"<br>");
+		
+	//	document.write(laptop instanceof Array);
+	
+		document.write("Converted to String :"+laptop.toString()+"<br>");
+		
+		document.write("Convert array to string   :"+laptop.join('-')+"<br>");
+		
+		document.write("Last element  :  "+laptop.at(-1)+"<br>");
+		
+		document.write("Remove Last element  :  "+laptop.pop()+"<br>");
+		
+		document.write("Laptop Array after popping last element :  "+laptop+"<br>");
+		
+		document.write("Remove first element  :"+laptop.shift()+"<br>");
+		
+		document.write("Laptop Array after popping first element :  "+laptop+"<br>");
+		
+		laptop.unshift("Dell");
+		
+		document.write("Laptop Array after adding first element :  "+laptop+"<br>");
+		
+		document.write("Concatenation   :"+laptop.concat(cars)+"<br>");
+		
+		document.write("Laptop Array  :"+laptop+"<br>");
+		
+		document.write("Cars Array  :"+cars+"<br>");
+		
+		document.write("Concatenation   :"+laptop.concat(cars,mobile)+"<br>");
+		
+		document.write("Concatenation   :"+laptop.concat("Playwright")+"<br>");
+		
+	//	document.write("Copy Within    :"+cars.copyWithin(2,0)+"<br>"); //position,index
+		
+	//	document.write("Copy Within    :"+cars.copyWithin(2,0,1)+"<br>"); //position,index
+		
+		cars.splice(2,0,"Ford","Renault"); //position,index
+	
+		document.write("Cars Array  :"+cars+"<br>");
+	
+		cars.splice(3,1);
+		
+		document.write("Cars Array  :"+cars+"<br>");
+		
+		const splicedCar = cars.toSpliced(2,1);
+		
+		document.write("Spliced Cars Array  :"+splicedCar+"<br>");
+	
+		document.write("Cars Array  :"+cars+"<br>");
+		
+		const laptops = laptop.slice(4);  //remove ele till index given
+		
+		document.write("Laptop Array  :"+laptops+"<br>");
+		
+		const laptops1 = laptop.slice(0,4);
+		document.write("Laptop Array  :"+laptops1+"<br>");
+		
+	</script>
+
+</body>
+</html>

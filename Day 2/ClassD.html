@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>JS Class</title>
+	
+</head>
+<body>
+	<center>
+		<h1>Welcome to Playwright Training!!</h1>
+	</center>
+		
+	<script>
+		class  Car {
+		
+			//mandatory to use for instantiation
+			constructor(name,model,year){
+			this.name = name;
+			this.model = model;
+			this.year = year;
+			}
+		}
+		
+		const car1 = new Car("Honda","Amaze",2022);
+		const car2= new Car("Maruti","Swift",2019);
+		document.write(car1.name +"   "+car2.name+"<br>");  
+		document.write(car1.model +"   "+car2.model+"<br>");
+		document.write(car1.year +"   "+car2.year+"<br>");
+	</script>
+
+</body>
+</html>

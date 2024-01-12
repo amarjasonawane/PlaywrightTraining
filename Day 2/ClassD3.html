@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>JS Class</title>
+	
+</head>
+<body>
+	<center>
+		<h1>Welcome to Playwright Training!!</h1>
+	</center>
+		
+	<script>
+		class  Shape{
+								
+			calc_Area(){
+				document.write("Superclass method");
+			}
+		}
+		
+		class Circle extends Shape{
+			
+			constructor(radius){
+				super();
+				this.radius = radius;
+			}
+			
+			calc_Area(){
+				return Math.PI * this.radius * this.radius;
+			}
+		}
+		
+		class Triangle extends Shape{
+			
+			constructor(base, height){
+				super();
+				this.base = base;
+				this.height = height;
+			}
+			
+			calc_Area(){
+				return 0.5 * this.base * this.height;
+			}
+		}
+		
+		
+		const c1 = new Circle(40);
+		const t1 = new Triangle(50,100);
+		document.write("Area of Circle : "+c1.calc_Area().toFixed(2)+"<br>");
+		document.write("Area of Triangle : "+t1.calc_Area()+"<br>");
+	</script>
+
+</body>
+</html>

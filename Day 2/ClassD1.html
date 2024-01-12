@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title>JS Class</title>
+	
+</head>
+<body>
+	<center>
+		<h1>Welcome to Playwright Training!!</h1>
+	</center>
+		
+	<script>
+		class  Person {
+		
+			//mandatory to use for instantiation
+			constructor(name,age,country){
+			this.name = name;
+			this.age = age;
+			this.country = country;
+			}
+			
+			display_Info(){
+				document.write("Person's Name :"+ this.name+"<br>");  
+				document.write("Person's Age :"+ this.age+"<br>");  
+				document.write("Person's Country :"+ this.country+"<br><br>");  
+			}
+		}
+		
+		const p1 = new Person("Amey",16,"India");
+		const p2= new Person("Raj",45,"India");
+		document.write("Data for Object1 :" +"<br>");
+		p1.display_Info();
+		document.write("Data for Object2 :"+"<br>");
+		p2.display_Info();
+	</script>
+
+</body>
+</html>

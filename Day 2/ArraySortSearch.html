@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>JS Array</title>
+	
+</head>
+<body>
+	<center>
+		<h1>Welcome to Playwright Training!!</h1>
+	</center>
+		
+	<script>
+		const cars=["Hyundai","Kia","Honda","Maruti","Toyota"];
+		document.write(cars+"<br>");
+		
+		const mobile=[];
+		mobile[0] = "Samsung";
+		mobile[1] = "OnePlus";
+		mobile[2]="IPhone";
+		document.write(mobile+"<br>");
+		
+		const laptop = new Array("Dell","Lenovo","HP");
+		document.write(laptop+"<br>");
+		
+		document.write(laptop[2]+"<br>");	
+		laptop[1]="Acer";
+		for(let i=0;i<laptop.length;i++){
+			document.write(laptop[i]+"<br>");
+		}
+		
+		document.write("Index of :"+cars.indexOf("Honda")+"<br>");
+		let position = cars.indexOf("Honda")+1;
+		document.write("Position of Honda in the array :"+position+"<br>");
+		
+		document.write("Index of after index :"+cars.indexOf("Honda",5)+"<br>");
+		document.write("Index of after index :"+cars.indexOf("Honda",-3)+"<br>");
+		
+		cars.push("Honda");
+		document.write("Index of Honda :"+cars.indexOf("Honda")+"<br>");
+		document.write("Index of after index :"+cars.indexOf("Honda",5)+"<br>");
+		
+		document.write("Last Index of  :"+cars.lastIndexOf("Honda")+"<br>");
+		
+		document.write("Last Index of  :"+cars.lastIndexOf("Honda",4)+"<br>");
+		
+		document.write("Last Index of  :"+cars.lastIndexOf("Honda",-1)+"<br>");
+		
+		document.write("Search Element :"+cars.includes("Jaquar")+"<br>");
+		
+		document.write("Search Element :"+cars.includes("Honda")+"<br>");
+		
+		const number = [1,34,67,2,78,9];
+		let first = number.find(fun1);
+	
+		document.write(first+"<br>");
+		
+		function fun1(value,index,Array){
+		
+			return value>4;
+			
+		}
+		
+		let fIndex = number.findIndex(fun1);
+		document.write(fIndex);
+	</script>
+
+</body>
+</html>

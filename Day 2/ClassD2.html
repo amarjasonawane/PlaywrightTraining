@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>JS Class</title>
+	
+</head>
+<body>
+	<center>
+		<h1>Welcome to Playwright Training!!</h1>
+	</center>
+		
+	<script>
+		class  Rectangle{
+		
+			//mandatory to use for instantiation
+			constructor(width,height){
+			this.width = width;
+			this.height = height;
+			}
+			
+			calc_Area(){
+				return this.width * this.height;
+			}
+			
+			calc_Perimeter(){
+				return 2*(this.width+this.height);
+			}
+		}
+		
+		const r1 = new Rectangle(4,10);
+		document.write("Area of Rectangle : "+r1.calc_Area()+"<br>");
+		document.write("Perimeter of Rectangle : "+r1.calc_Perimeter()+"<br>");
+	</script>
+
+</body>
+</html>
